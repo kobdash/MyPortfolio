@@ -1,7 +1,7 @@
 module.exports = {
   apps: [{
     name: "kobdash",
-    script: "./server.js",
+    script: "./server.sh",
     watch: false,
     instances: 1,
     env: {
