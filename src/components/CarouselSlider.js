@@ -8,19 +8,20 @@ import './styles/Slider.css';
 const CarouselSlider = ({ slides }) => {
   const sliderSettings = {
     dots: true,
-    arrows: true,
+    arrows: false,
     infinite: true,
-    speed: 450,
+    speed: 2000,
     slidesToShow: 3, 
     slidesToScroll: 1, 
     autoplay: true,
-    autoplaySpeed: 5000, 
+    autoplaySpeed: 0, 
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 0,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          pauseOnHover: false,
         },
       },
     ],
