@@ -20,12 +20,14 @@
   }
   
 
-.highlight{
-  font-family: 'SFTransRobotics-Oblique', sans-serif;
-  font-size: 25px;
+  .highlight {
+    font-family: 'SFTransRobotics-Oblique', sans-serif;
+    font-size: 25px;
     margin-bottom: 15px;
-    color: #e6ab0b;
-}
+    color: #e0a70a;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+  
 
   p {
     font-size: 20px;
@@ -42,5 +44,22 @@
 
   .nav-link{
     font-size: 20px;
+    font-weight: bold;
+  }
+
+
+  .centered-slide img {
+    border-radius: 10px; 
+  }
+  
+  ul{
+    font-family: 'SFTransRobotics-Oblique', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+  h3{
+    font-family: 'SFTransRobotics-Oblique', sans-serif;
+    font-size: 30px;
     font-weight: bold;
   }

@@ -5,7 +5,7 @@ const SlideData = [
     content: (
       <div className="centered-slide">
         <h1>Frontend</h1>
-        <img src="/images/sliderimages/frontend.png" alt="Slide 1" />  
+        <img className="rounded-image" src="/images/sliderimages/frontend.png" alt="Slide 1" />  
       </div>
     ),
   },
@@ -13,7 +13,7 @@ const SlideData = [
     content: (
       <div className="centered-slide">
         <h1>Backend</h1> 
-        <img src="/images/sliderimages/backend.png" alt="Slide 2" />
+        <img className="rounded-image" src="/images/sliderimages/backend.png" alt="Slide 2" />
       </div>
     ),
   },
@@ -21,7 +21,7 @@ const SlideData = [
     content: (
       <div className="centered-slide">
         <h1>Programming</h1>
-        <img src="/images/sliderimages/programming.png" alt="Slide 3" /> 
+        <img className="rounded-image" src="/images/sliderimages/programming.png" alt="Slide 3" /> 
       </div>
     ),
   },
@@ -29,7 +29,7 @@ const SlideData = [
     content: (
       <div className="centered-slide">
         <h1>Design</h1> 
-        <img src="/images/sliderimages/graphics.png" alt="Slide 4" />
+        <img className="rounded-image" src="/images/sliderimages/graphics.png" alt="Slide 4" />
       </div>
     ),
   },
@@ -37,7 +37,7 @@ const SlideData = [
     content: (
       <div className="centered-slide">
         <h1>Management </h1>
-        <img src="/images/sliderimages/content.png" alt="Slide 5" /> 
+        <img className="rounded-image" src="/images/sliderimages/content.png" alt="Slide 5" /> 
       </div>
     ),
   }
