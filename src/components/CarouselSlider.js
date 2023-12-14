@@ -10,20 +10,34 @@ const CarouselSlider = ({ slides }) => {
     dots: true,
     arrows: false,
     infinite: true,
-    speed: 2000,
+    speed: 3000,
     slidesToShow: 3, 
     slidesToScroll: 1, 
     autoplay: true,
-    autoplaySpeed: 0, 
+    autoplaySpeed: 1000, 
     responsive: [
       {
-        breakpoint: 0,
+        breakpoint: 1000, 
         settings: {
-          slidesToShow: 1,
+          speed: 4000,  
+          slidesToShow: 2, 
           slidesToScroll: 1,
-          pauseOnHover: false,
+          autoplay: true,
+          autoplaySpeed: 1000,
+        
         },
       },
+      {
+        breakpoint: 800,
+        settings: {
+          speed: 6000,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1000,
+        },
+      },
+     
     ],
   };
 

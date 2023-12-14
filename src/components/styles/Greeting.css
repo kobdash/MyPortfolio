@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'SFTransRobotics-Oblique';
+  src: url('../fonts/SFTransRobotics-Oblique.ttf') format('opentype');
+}
+
 
 .greeting-container {
     display: flex;
@@ -6,14 +11,26 @@
     align-items: center;
     text-align: center;
   }
-  h1 {
-    font-size: 24px;
+  
+  h1{
+    font-family: 'SFTransRobotics-Oblique', sans-serif;
+
+    font-size: 44px;
     margin-bottom: 10px;
   }
   
-  p {
-    font-size: 16px;
+
+.highlight{
+  font-family: 'SFTransRobotics-Oblique', sans-serif;
+  font-size: 25px;
     margin-bottom: 15px;
+    color: #e6ab0b;
+}
+
+  p {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
   }
 
   .rounded-image {
@@ -21,4 +38,9 @@
     height: 100px; 
     border-radius: 50%; 
     object-fit: cover; 
+  }
+
+  .nav-link{
+    font-size: 20px;
+    font-weight: bold;
   }

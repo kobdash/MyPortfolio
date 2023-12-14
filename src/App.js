@@ -10,15 +10,17 @@ import Navbar from './components/Navbar';
 import './components/styles/App.css';
 
 function App() {
-  const [navbarVisible, setNavbarVisible] = useState(false); // Start initially hidden
+  const [navbarVisible, setNavbarVisible] = useState(false); 
 
   const toggleNavbar = () => {
     setNavbarVisible(!navbarVisible);
   };
 
+
+
   return (
     <Router>
-      <div className="bg-dark text-light">
+      <div>
       <button onClick={toggleNavbar} class="btn btn-secondary dropdown-toggle">Menu
 </button>
         <div className={`navbar-container ${navbarVisible ? 'visible' : ''}`}>

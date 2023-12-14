@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './styles/Greeting.css';
 
 const Typewriter = ({ text, delay }) => {
   const [displayText, setDisplayText] = useState('');
