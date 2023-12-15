@@ -3,10 +3,14 @@ import React, { useState } from 'react';
 import './styles/Greeting.css';
 import Typewriter from './Typewriter';
 import LanguagesModal from './LanguagesModal';
+import SkillsModal from './SkillsModal';
 
 const Greeting = () => {
   const [showLanguages, setShowLanguages] = useState(false);
   const [clickedItemPosition, setClickedItemPosition] = useState({ top: 0, left: 0 });
+
+  const [showSkills, setShowSkills] = useState(false);
+
 
   const toggleLanguages = (event) => {
     const rect = event.target.getBoundingClientRect();
@@ -14,19 +18,37 @@ const Greeting = () => {
     setShowLanguages(!showLanguages);
   };
 
+  const toggleSkills = (event) => {
+    const rect = event.target.getBoundingClientRect();
+    setClickedItemPosition({ top: rect.bottom + window.scrollY, left: rect.left + window.scrollX });
+    setShowSkills(!showSkills);
+  };
+
   const programmingLanguages = [
     'JavaScript',
-    'React',
-    'Node.js',
+    'Java',
+    'C++',
+    'C#',
+    'PHP',
+    'Python',
     'HTML',
     'CSS',
+    'MySQL',
+    'MongoDB',
+  ];
+  const Skills = [
+    'CLoud Computing',
+    'Cyber Security',
+    'Network Topology',
+    'Database Management',
+    'Graphics Design',
   ];
 
   return (
     <div className="greeting-container">
       <img src="/images/greeting/IMG_20230917_121348.jpg" alt="profile" className="rounded-image" /><br />
       <h1><Typewriter text="Hi, I'm Jeff Tinodashe Nyahuye" delay={70} /></h1>
-      <p>I am a <span className="highlight" onClick={toggleLanguages}>Full Stack Developer</span> and <span className="highlight">IT Professional</span></p>
+      <p>I am a <span className="highlight" onClick={toggleLanguages}>Full Stack Developer</span> and <span className="highlight" onClick={toggleSkills}>IT Professional</span></p>
       <p>I love crafting captivating websites, coding dynamic programs, building interactive applications, and enhancing existing projects.</p>
 
       <LanguagesModal
@@ -35,6 +57,15 @@ const Greeting = () => {
         programmingLanguages={programmingLanguages}
         position={clickedItemPosition}
       />
+
+      <SkillsModal
+      isOpen={showSkills}
+      onRequestClose={toggleSkills}
+      Skills={Skills}
+      position={clickedItemPosition}
+        
+        
+        />
     </div>
   );
 }

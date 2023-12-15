@@ -21,7 +21,7 @@ function App() {
   return (
     <Router>
       <div>
-      <button onClick={toggleNavbar} class="btn btn-secondary dropdown-toggle">Menu
+      <button onClick={toggleNavbar} class="btn btn-secondary dropdown-toggle"><span class='highlight'>Menu</span>
 </button>
         <div className={`navbar-container ${navbarVisible ? 'visible' : ''}`}>
           <Navbar />
