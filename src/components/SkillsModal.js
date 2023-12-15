@@ -2,25 +2,14 @@
 import React from 'react';
 import Modal from 'react-modal';
 
-const ModalContent = ({Skills}) => (
-  <div className="language-scrollbox">
-    <h3>Skills in my toolbox</h3>
-    <ul>
-      {Skills.map((language, index) => (
-        <li key={index}>{language}</li>
-      ))}
-    </ul>
-  </div>
-);
-
-const SkillsModal = ({ isOpen, onRequestClose, Skills, position }) => {
+ 
   const customStyles = {
     overlay: {
       backgroundColor: 'transparent', 
     },
     content: {
-      top: position.top || '50%', 
-      left: position.left || '50%',
+      top: '50%', 
+      left: '50%',
       right: 'auto',
       bottom: 'auto',
       marginRight: '-50%',
@@ -34,16 +23,25 @@ const SkillsModal = ({ isOpen, onRequestClose, Skills, position }) => {
     },
   };
 
-  return (
+
+  Modal.setAppElement('#root');
+  const SkillsModal = ({ isOpen, onRequestClose, Skills, position }) =>(
+  
     <Modal
       isOpen={isOpen}
       onRequestClose={onRequestClose}
       style={customStyles}
       contentLabel="Skills"
     >
-      <ModalContent Skills={Skills} />
+      <div className="language-scrollbox">
+      <h3>Languages I know</h3>
+      <ul>
+        {Skills.map((language, index) => (
+          <li key={index}>{language}</li>
+        ))}
+      </ul>
+    </div>
     </Modal>
   );
-};
 
 export default SkillsModal;

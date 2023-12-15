@@ -7,20 +7,16 @@ import SkillsModal from './SkillsModal';
 
 const Greeting = () => {
   const [showLanguages, setShowLanguages] = useState(false);
-  const [clickedItemPosition, setClickedItemPosition] = useState({ top: 0, left: 0 });
 
   const [showSkills, setShowSkills] = useState(false);
 
 
   const toggleLanguages = (event) => {
-    const rect = event.target.getBoundingClientRect();
-    setClickedItemPosition({ top: rect.bottom + window.scrollY, left: rect.left + window.scrollX });
     setShowLanguages(!showLanguages);
   };
 
   const toggleSkills = (event) => {
-    const rect = event.target.getBoundingClientRect();
-    setClickedItemPosition({ top: rect.bottom + window.scrollY, left: rect.left + window.scrollX });
+
     setShowSkills(!showSkills);
   };
 
@@ -55,16 +51,12 @@ const Greeting = () => {
         isOpen={showLanguages}
         onRequestClose={toggleLanguages}
         programmingLanguages={programmingLanguages}
-        position={clickedItemPosition}
       />
 
       <SkillsModal
       isOpen={showSkills}
       onRequestClose={toggleSkills}
-      Skills={Skills}
-      position={clickedItemPosition}
-        
-        
+      Skills={Skills}      
         />
     </div>
   );
