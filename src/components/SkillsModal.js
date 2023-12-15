@@ -34,7 +34,7 @@ import Modal from 'react-modal';
       contentLabel="Skills"
     >
       <div className="language-scrollbox">
-      <h3>Languages I know</h3>
+      <h3>Skills I know</h3>
       <ul>
         {Skills.map((language, index) => (
           <li key={index}>{language}</li>
