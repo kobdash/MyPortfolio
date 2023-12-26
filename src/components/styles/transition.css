@@ -1,0 +1,29 @@
+/* transition.css */
+
+/* Initial state of the element */
+.slide-enter {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+/* Active state during the transition */
+.slide-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 1000ms ease, opacity 1000ms ease;
+}
+
+/* Final state after the transition is complete */
+.slide-exit {
+  transform: translate(100%);
+  opacity: 0;
+}
+
+/* Active state during the exit transition */
+.slide-exit-active {
+  transform: translateX(0%);
+  opacity: 0;
+  transition: transform 1000ms ease, opacity 1000ms ease;
+}
+
+  
