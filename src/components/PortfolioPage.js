@@ -5,13 +5,17 @@ import React from 'react';
 const projects = [
   {
     id: 1,
-    name: 'Project 1',
-    imageUrl: 'https://placekitten.com/300/200', // Replace with your actual image URL
+    name: "JIMS Inventory Management System",
+    imageUrl: '/images/portfolio/Screenshot from 2023-12-01 07-00-47.png', 
+    description: "Inventory management system that uses React and Express frameworks. It is styled using bootstrap5",
+    projectLink: "https://github.com/kobdash/Jeff-s-Inventory-Management-System",
   },
   {
     id: 2,
-    name: 'Project 2',
-    imageUrl: 'https://placekitten.com/300/201', // Replace with your actual image URL
+    name: 'Property Buddy',
+    imageUrl: '/images/portfolio/logo.png', 
+    description: 'Website where you can upload and sell property. Made using React and Express frameworks',
+    projectLink: 'https://github.com/kobdash/PropertyBuddy',
   },
   // Add more projects as needed
 ];
@@ -34,8 +38,8 @@ const PortfolioPage = () => {
               />
               <div className="card-body">
                 <h3 className="card-title">{project.name}</h3>
-                <p className="card-text">Project description goes here.</p>
-                <a href={`https://github.com/kobdash/${project.name}`} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                <p className="card-text">{project.description}</p>
+                <a href={`${project.projectLink}`} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
                   View on GitHub
                 </a>
               </div>
