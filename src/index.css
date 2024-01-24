@@ -14,9 +14,40 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+
+}
+
+.body{
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.contact-button-container {
+  margin-left: auto; /* This will push the contact button to the far right */
+}
+
+footer {
+  margin-top: auto; /* This pushes the footer to the bottom of the page */
+  padding: 10px;
+}
+
+.contact{
+
+color:rgb(84, 222, 240);
+
 }

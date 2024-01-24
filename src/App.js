@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './components/styles/_custom-bootstrap.scss';
 import { useState } from'react';
 import HomePage from './components/HomePage';
@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import './components/styles/App.css';
 import TransitionWrapper from './components/TransitionWrapper';
 import NotFound from './components/NotFound';
+import ContactPage from './components/ContactPage';
 
 
 
@@ -34,16 +35,21 @@ function App() {
 
     <Router>
 
-<button onClick={toggleNavbar} class="btn btn-secondary dropdown-toggle"><span class='highlight'>Menu</span>
-    </button>
-            <div className={`navbar-container ${navbarVisible ? 'visible' : ''}`}>
-              <Navbar />
-            </div>
+<div className="button-container">
+        <button onClick={toggleNavbar} className="btn btn-secondary dropdown-toggle">
+          <span className='highlight'>Menu</span>
+        </button>
+        <div className="contact-button-container">
+          <Link to="/contactPage" className="btn btn-secondary contact-button">
+            <span className='highlight'><span className='contact'>Contact</span></span>
+          </Link>
+        </div>
+      </div>
+      <div className={`navbar-container ${navbarVisible ? 'visible' : ''}`}>
+        <Navbar />
+      </div>
 
-
-
-
-
+<div className='body'>      
       
       <TransitionWrapper>
       <Routes>
@@ -51,14 +57,18 @@ function App() {
         <Route path="/portfolio" element={<PortfolioPage />} />
         <Route path="/about" element={<AboutPage />} />  
         <Route path="*" element={<NotFound />} />
+        <Route path="contactPage" element={<ContactPage/>}/>
        
 
 
       </Routes>
-    <Footer />
+ 
     </TransitionWrapper>
-    </Router>
+</div>
 
+    <footer><Footer /></footer>
+    </Router>
+    
   );
 }
 

@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-6">
-            <h5>Links</h5>
+            <h3>Links</h3>
             <ul className="list-unstyled">
             <li>
           <Link to="https://github.com/kobdash" className="nav-link">Github</Link>
@@ -23,9 +23,8 @@ const Footer = () => {
             </ul>
           </div>
           <div className="col-md-6">
-            <h5>Contact Information</h5>
-            <p>Email: jefftny1@gmail.com</p>
-            <p>Phone: +27738022536</p>
+            <h3>Contact Information</h3>
+          <a href='mailto:jefftny1@gmail.com' className='contact'><h4 >jefftny1@gmail.com</h4></a>
           </div>
         </div>
         <div className="row mt-3">
