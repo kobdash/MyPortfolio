@@ -8,6 +8,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import './components/styles/App.css';
 import TransitionWrapper from './components/TransitionWrapper';
+import NotFound from './components/NotFound';
 
 
 
@@ -49,6 +50,7 @@ function App() {
         <Route path="/" element={<HomePage />} key ="home"/>
         <Route path="/portfolio" element={<PortfolioPage />} />
         <Route path="/about" element={<AboutPage />} />  
+        <Route path="*" element={<NotFound />} />
        
 
 

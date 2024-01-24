@@ -3,9 +3,8 @@ import React from 'react';
 function AboutPage() {
   return (
     <div>
-       <h1>About</h1>
       <p>
-        My abilities
+        <h1>My abilities</h1>
         <ul>
           <li>Proficient in programming languages commonly used for server-side development</li>
           <li>Familiar with server frameworks that provide tools and libraries to streamline development</li>
@@ -25,7 +24,7 @@ function AboutPage() {
         </ul>
       </p>
       <p>
-        Programming Languages:
+        <h1>Programming Languages:</h1>
         <ul>
           <li>C#</li>
           <li>C++</li>
@@ -36,7 +35,7 @@ function AboutPage() {
         </ul>
       </p>
       <p>
-        Web Development Technologies:
+        <h1>Web Development Technologies:</h1>
         <ul>
           <li>HTML5</li>
           <li>CSS3</li>
