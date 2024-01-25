@@ -82,23 +82,28 @@ function ContactPage() {
       <br></br>
       <h5>
         Send Me An Email:
-        {" "}
+        {" "}</h5>
+        <h5>
         <a href="mailto:jefftny1@gmail.com" className="contact">
           jefftny1@gmail.com
-        </a>
-      </h5>
+        </a></h5>
+        <br/>
+      
       <h5>
-      Visit My Linkedin:{" "}
-        <a href="https://www.linkedin.com/in/jeff-n-3293172a3/" className="contact">
+      Visit My Linkedin:{" "}  </h5>
+        <h5><a href="https://www.linkedin.com/in/jeff-n-3293172a3/" className="contact">
           https://www.linkedin.com/in/jeff-n-3293172a3/
-        </a>
-      </h5>
+        </a></h5>
+        <br/>
+
       <h5>
-        Visit My GitHub:{" "}
-        <a href="https://github.com/kobdash" className="contact">
+        Visit My GitHub:{" "}</h5>
+        
+        <h5><a href="https://github.com/kobdash" className="contact">
           https://github.com/kobdash
-        </a>
-      </h5>
+        </a></h5>
+        <br/>
+      
     </div>
   );
 }
