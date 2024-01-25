@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "./styles/Footer.css";
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-6">
-            <h3>Links</h3>
+            <h3 className='footerMenu'>Links</h3>
             <ul className="list-unstyled">
             <li>
           <Link to="https://github.com/kobdash" className="nav-link">Github</Link>
@@ -22,9 +23,9 @@ const Footer = () => {
         </li>
             </ul>
           </div>
-          <div className="col-md-6">
-            <h3>Contact Information</h3>
-          <a href='mailto:jefftny1@gmail.com' className='contact'><h4 >jefftny1@gmail.com</h4></a>
+          <div className="col-md-6 ">
+            <h3 className='footerMenu'>Contact Information</h3>
+          <a href='mailto:jefftny1@gmail.com' className='contact'><h5>jefftny1@gmail.com</h5></a>
           </div>
         </div>
         <div className="row mt-3">

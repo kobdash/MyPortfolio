@@ -38,7 +38,8 @@ code {
 }
 
 .contact-button-container {
-  margin-left: auto; /* This will push the contact button to the far right */
+  margin-left: auto; 
+  margin-top: 10px;
 }
 
 footer {
@@ -50,4 +51,10 @@ footer {
 
 color:rgb(84, 222, 240);
 
+}
+a{
+  color:rgb(84, 222, 240);
+}
+a:hover{
+  color: white;
 }

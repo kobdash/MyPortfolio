@@ -48,6 +48,12 @@
   .nav-link{
     font-size: 20px;
     font-weight: bold;
+    font-family: 'Roboto-MediumItalic', sans-serif;
+    color:black;
+  }
+  .nav-link:hover { 
+
+    color:white;
   }
 
 
@@ -66,6 +72,14 @@
     font-size: 30px;
     font-weight: bold;
   }
-  h4{
+  h5{
     font-family: 'Roboto-MediumItalic', sans-serif;
+    font-weight: bold;
   }
+  label{
+
+    font-family: 'Roboto-MediumItalic', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  

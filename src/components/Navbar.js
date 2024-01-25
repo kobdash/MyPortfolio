@@ -14,6 +14,9 @@ function Navbar() {
         <li>
           <Link to="/about" className="nav-link">About</Link>
         </li>
+        <li>
+          <Link to="/contactPage" className="nav-link">Contact</Link>
+        </li>
       </ul>
     </nav>
   );
